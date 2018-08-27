@@ -1,0 +1,9 @@
+@import "./custom/customVariables.scss";
+@import "./custom/functions.scss";
+@import "./custom/custom.scss";
+@import "./custom/overRideComponent.scss";
+@import "./custom/bootstrap.scss";
+
+$icon-font-path: "/node_modules/bootstrap-sass/assets/fonts/bootstrap/";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap.scss";
+@import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap-compass.scss";

@@ -1,0 +1,150 @@
+/// Date Picker
+.form-control::placeholder {
+  color: #bbb !important;
+}
+
+.react-datepicker-wrapper {
+  width: 100% !important;
+}
+
+.react-datepicker__input-container {
+  width: 100% !important;
+}
+
+.react-datepicker__time-container {
+  width: 160px !important;
+}
+
+.react-datepicker__time-list {
+  padding: 0;
+}
+
+.with_time .react-datepicker-popper {
+  width: 100%;
+
+  .react-datepicker__navigation--next {
+    right: calc(50% + 10px) !important;
+  }
+
+  .react-datepicker__navigation {
+    top: 20px !important;
+  }
+
+  .react-datepicker {
+    width: 100%;
+
+    .react-datepicker__month-container {
+      width: 50%;
+      height: 100% !important;
+      .react-datepicker__current-month {
+        font-size: 16px;
+        padding: 5px 10px;
+      }
+      .react-datepicker__day-names {
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+        padding: 0 10px;
+      }
+      .react-datepicker__week {
+        display: flex;
+        justify-content: space-around;
+        font-size: 12px;
+        margin-top: 8px;
+        padding: 0 10px;
+        font-weight: 300;
+      }
+      .react-datepicker__month {
+        height: 150px;
+      }
+    }
+    .react-datepicker__time-container {
+      width: 50% !important;
+      .react-datepicker__header--time {
+        padding: 5px 10px;
+        height: 61.3px;
+        .react-datepicker-time__header {
+          font-size: 16px;
+          margin-top: 10px !important;
+        }
+      }
+
+      .react-datepicker__time-box {
+        margin: 0 auto;
+      }
+
+      .react-datepicker__time-list-item {
+        font-size: 12px;
+        margin-top: 5px;
+        padding: 0 10px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .react-datepicker-popper
+    .react-datepicker
+    .react-datepicker__month-container {
+    width: 100% !important;
+  }
+  .react-datepicker-popper .react-datepicker .react-datepicker__time-container {
+    width: 100% !important;
+  }
+}
+
+/// Place auto completion
+
+#PlacesAutocomplete__root input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/// Pagination
+.rc-pagination-item-active {
+  background-color: $main-color !important;
+  border-color: $main-color;
+}
+
+.rc-pagination-item {
+  a:hover,
+  a:focus {
+    color: #2f908a;
+    text-decoration: none;
+  }
+}
+
+.rc-pagination-item:hover {
+  border-color: $main-color;
+  background: white !important;
+  color: #666 !important;
+  a {
+    color: #666 !important;
+  }
+}
+
+/// Multi Select component
+
+.Select {
+  width: 100% !important;
+}
+
+/// Material-UI dialog
+.dialog-override {
+  div {
+    div {
+      div {
+        div:nth-of-type(1) {
+          overflow-y: scroll !important;
+        }
+      }
+    }
+  }
+}
+
+///  React-bootstrap dropdown button
+
+#dropdown-size-medium.btn-default {
+  border-color: white !important;
+}

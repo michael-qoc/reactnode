@@ -1,0 +1,17 @@
+/* .showcaseimage {
+  background: url("./assets/image/startup-photos.jpg") no-repeat 0 -100px;
+}
+
+.title-bar {
+  background: url("./assets/image/startup-photos.jpg") no-repeat 0 -300px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #1a8c97;
+} */
+
+.landing__header {
+  background: url("./assets/image/pexels.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: calc(100vh - 50px);
+  min-height: 700px;
+}

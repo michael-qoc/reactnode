@@ -1,0 +1,15 @@
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return lighten($gray-base, 5%);
+  } @else {
+    @return #ffffff;
+  }
+}
+
+@function set-text-color-two($color) {
+  @if (lightness($color) > 40) {
+    @return $dark-purple;
+  } @else {
+    @return #ffffff;
+  }
+}

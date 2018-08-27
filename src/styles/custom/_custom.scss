@@ -1,0 +1,596 @@
+.test {
+  background: red;
+}
+
+body {
+  background: #f4f4f4 !important;
+  color: set-text-color($main-color);
+}
+
+///////////////////////// Navbar
+
+.toggle-navbar {
+  transition: transform 1s ease-out !important;
+}
+
+.toggle-open {
+  transform: translateY(0) !important;
+}
+
+.toggle-close {
+  transform: translateY(-100%) !important;
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none !important;
+  .custom-navbtn {
+    color: #62b664 !important;
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+  a {
+    color: #62b664 !important;
+  }
+  .fa {
+    font-size: 18px;
+  }
+  .fab {
+    font-size: 18px;
+  }
+}
+.navbar-default {
+  background-color: white !important;
+}
+
+.navbar-item--rightsilverline {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navbar-item--leftsilverline {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+///////////////////////// Home Page
+
+.showcase {
+  height: 600px;
+  padding: 30px 0;
+
+  h1 {
+    font-size: 60px;
+  }
+  .container {
+    background: #fff;
+    opacity: 0.7;
+    padding: 20px 30px 30px 30px;
+  }
+}
+
+.section-a {
+  padding: 30px 0;
+  text-align: center;
+  background: $main-color;
+  color: set-text-color($main-color);
+  .fa {
+    font-size: $icon-size;
+  }
+  .fab {
+    font-size: $icon-size;
+  }
+}
+
+.section-b {
+  background: #e6ebf1;
+  padding: 30px 0;
+  img {
+    width: 100%;
+  }
+}
+
+.panel-heading h4 {
+  color: set-text-color($main-color);
+}
+
+.section-c {
+  padding: 60px 0;
+
+  text-align: center;
+  background: $main-color;
+  color: set-text-color($main-color);
+  .btn-primary {
+    background: darken($main-color, 10%);
+  }
+}
+
+////////////////////////// Footer
+
+footer {
+  padding: 30px 0;
+  background: darken($main-color, 10%);
+  text-align: center;
+  color: set-text-color($main-color);
+}
+
+.main {
+  margin-top: 30px;
+}
+
+/////////////////////////  Dashboard Page
+
+/// Header
+.dashboard__header {
+  background: #333333;
+  color: set-text-color($main-color);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+
+  .dashboard__create {
+    padding-top: 20px;
+  }
+}
+
+/// breadcrumb
+.dashboard__breadcrumb {
+  .breadcrumb {
+    background: #cccccc;
+    color: #333333;
+    a {
+      color: #333333;
+    }
+  }
+}
+
+// Main
+.dashboard__main {
+  .panel-title {
+    color: set-text-color($main-color);
+  }
+
+  .well {
+    color: none;
+    background: none;
+  }
+
+  .progress-bar {
+    background: $second-color;
+  }
+  .fa {
+    font-size: 18px;
+  }
+  .fab {
+    font-size: 18px;
+  }
+}
+
+.dashboard__box {
+  text-align: center;
+  position: relative;
+  color: set-text-color($main-color);
+  padding-top: 5px;
+  .fa {
+    font-size: 30px;
+  }
+  .fab {
+    font-size: 30px;
+  }
+  button {
+    position: absolute;
+    min-width: 60px;
+    bottom: 15px;
+    right: calc(50% - 35px);
+  }
+  a {
+    position: absolute;
+    bottom: 15px;
+    min-width: 60px;
+    right: calc(50% - 35px);
+  }
+}
+
+/////////////////////////  Login Page
+
+/// Header
+
+.login__header {
+  background: #333333;
+  color: set-text-color($main-color);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.login__main {
+  margin-top: 50px;
+}
+
+///////////////////////// Landing Page
+
+.landing__header {
+  color: #f4f4f4;
+
+  .well {
+    background: $dark-purple;
+    border: none;
+    opacity: 0.9;
+    background-image: linear-gradient(
+      135deg,
+      rgb(24, 42, 115) 0%,
+      rgb(33, 138, 174) 97%
+    ) !important;
+  }
+}
+
+.landing__dark-overlay {
+  background-color: $dark-overlay-two;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 50px);
+  min-height: 700px;
+}
+
+.landing__dark-overlay__inner {
+  padding-top: 120px;
+  height: 90%;
+}
+
+.landing__meetup {
+  min-height: 100vh;
+
+  color: set-text-color($main-color);
+}
+
+/// Chat box page
+.chat-box {
+  width: 100%;
+  max-width: 300px !important;
+  height: 500px;
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-image: linear-gradient(
+    135deg,
+    rgb(24, 42, 115) 0%,
+    rgb(33, 138, 174) 69%,
+    rgb(32, 167, 172) 89%
+  ) !important;
+
+  .box-container-one {
+    width: 95%;
+    height: 395px;
+    position: absolute;
+    margin-left: 8px;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 60px;
+    background: white;
+  }
+  .box-container-two {
+    width: 95%;
+    height: 430px;
+    margin-left: 8px;
+    position: absolute;
+    overflow: auto;
+    overflow-x: hidden;
+    top: 60px;
+    background: white;
+    .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0 !important;
+    }
+    .list-group-item {
+      border-radius: 0;
+    }
+  }
+
+  .box-container-one {
+    -ms-overflow-style: none; // IE 10+
+    overflow: -moz-scrollbars-none; // Firefox
+  }
+  .box-container-one::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+  }
+
+  form {
+    position: absolute;
+    margin-left: 8px;
+    bottom: 10px;
+    width: 95%;
+    border: none !important;
+
+    input {
+      border-radius: 0 !important;
+      height: 33px;
+    }
+    button {
+      border-radius: 0 !important;
+    }
+  }
+
+  .title {
+    position: absolute;
+
+    top: 10px;
+    font-size: 20px;
+    color: white !important;
+
+    .icon {
+      position: absolute;
+    }
+  }
+}
+
+.ball {
+  background-image: linear-gradient(
+    135deg,
+    rgb(24, 42, 115) 0%,
+    rgb(33, 138, 174) 69%,
+    rgb(32, 167, 172) 89%
+  ) !important;
+  width: 60px;
+  height: 60px;
+  right: 10px;
+  bottom: 20px;
+  position: fixed;
+  border-radius: 50%;
+  .red-dot-container {
+    position: relative;
+    .red-dot {
+      position: absolute;
+      top: -10px;
+      background: red;
+      font-size: 12px;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      line-height: 20px;
+    }
+  }
+}
+
+.message-red-dot {
+  position: relative;
+  .red-dot {
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    background: red;
+    font-size: 12px;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    line-height: 20px;
+  }
+  span {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+}
+
+/// Article Home Page
+
+.banner {
+  ///background: darken(#f3f3f3, 15%);
+  background-color: #5fb760;
+
+  color: set-text-color(#5fb760);
+  min-height: 180px;
+}
+
+.tag-default {
+  color: #fff !important;
+  font-size: 12px;
+  line-height: 18px;
+  padding-top: 1.4px;
+  padding-bottom: 1.4px;
+  white-space: nowrap;
+  margin-right: 3px;
+  margin-bottom: 2.8px;
+  display: inline-block;
+  background-color: #818a91;
+}
+
+.tag-pill {
+  padding-right: 8.4px;
+  padding-left: 8.4px;
+  border-radius: 100px;
+}
+
+.article-preview {
+  border-top: 1px solid darken($light-grey, 5%);
+}
+
+.active-nav-pills {
+  color: #1c3b7a !important;
+  background: white !important;
+  border: none;
+  border-bottom: 2px solid #1c3b7a;
+  margin-left: 0 !important;
+  a {
+    color: #1c3b7a !important;
+    background: white !important;
+    &:hover {
+      background: #eeeeee !important;
+      border-radius: 0;
+    }
+  }
+}
+
+.nav-pills {
+  a {
+    &:hover {
+      background: #eeeeee !important;
+      border-radius: 0;
+    }
+  }
+}
+
+/// LinkedIn details page
+
+.details-card {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+}
+
+// User center page
+
+.userInfo-form {
+  .form-group {
+    margin-bottom: 3px;
+  }
+}
+
+.overflow-scroll {
+  overflow: auto;
+  overflow-x: hidden;
+  -ms-overflow-style: none; // IE 10+
+  overflow: -moz-scrollbars-none; // Firefox
+}
+.overflow-scroll::-webkit-scrollbar {
+  display: none; // Safari and Chrome
+}
+
+/// Scroll to top button
+
+.scroll-top {
+  position: fixed;
+
+  right: 80px;
+  bottom: 25px;
+
+  .arrow {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2px 4px;
+    color: #fff;
+    width: 50px;
+    height: 45px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: #696e78;
+    opacity: 0.6;
+    &:hover p.new-label span {
+      display: none;
+    }
+    &:hover p.new-label::after {
+      content: "To Top";
+      font-size: 13px;
+      line-height: 35px;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+/// Scroll to next button
+
+.scroll-arrow-position {
+  position: absolute;
+  bottom: 3vh;
+  right: calc(50vw - 20px);
+}
+
+.scroll-arrow-position-two {
+  position: absolute;
+  bottom: 3vh;
+  right: calc(50vw - 20px);
+}
+
+.scroll-to-next {
+  cursor: pointer;
+
+  .arrow {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 0.5rem;
+    color: #696e78;
+
+    .scroll-text {
+      text-align: center;
+      font-size: 12px;
+      margin-bottom: -0.125rem;
+    }
+  }
+
+  .bounce {
+    animation: bounce 5s infinite;
+  }
+
+  @keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+}
+
+/// Event details page
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15) !important ;
+  border-radius: 5px;
+  border: 1 solid $main-color;
+  position: relative;
+
+  .card-image-overlay {
+    background-color: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0 0 !important;
+  }
+
+  .card-image {
+    width: 100%;
+    border-radius: 5px 5px 0 0 !important;
+    position: relative;
+  }
+
+  .card-image-text {
+    position: absolute; /* Position the background text */
+    bottom: 30px; /* At the bottom. Use top:0 to append it to the top */
+    left: 40px;
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+}
+
+.gm-style-iw {
+  max-width: 400px;
+}
+
+// About Me page
+
+.profile-img {
+  background-image: url("https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2017/11/12225358/Pug-On-White-01.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.carousel .thumb img {
+  width: 100% !important;
+  display: inline-block;
+  pointer-events: none;
+}
