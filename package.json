@@ -105,9 +105,9 @@
     "xss-filters": "^1.2.7"
   },
   "scripts": {
-    "frontend": "node scripts/start.js",
+    "start": "node scripts/start.js",
     "server": " nodemon server/server.js",
-    "dev": "concurrently \"npm run server\" \"npm run frontend\"",
+    "dev": "concurrently \"npm run server\" \"npm run start\"",
     "test": "node scripts/test.js --env=jsdom",
     "build": "node scripts/build.js",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install && npm run build"
