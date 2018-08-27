@@ -27,7 +27,7 @@ export default class NurseResourcePage extends Component {
 
           <p className="text-center" style={{ marginTop: 50 }}>
             <a
-              href="https://github.com/limuzi91/Serverside-Rendering"
+              href="https://github.com/limuzi91/reactnode"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary"
