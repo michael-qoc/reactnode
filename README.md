@@ -43,3 +43,41 @@ npm run dev
 ```
 npm run build
 ```
+
+
+# All things that this react-node project can do
+
+### 1. This Node server can serving all static assets (in fast loading speed) , and provide AJAX response (JSON data) through NODE endpoints
+
+### 2. All the endpoints can be used for both webapp and mobile platform
+###### Benefit: IOS/Android can send request to NODE endpoints rather API Server endpoints directly. this will prevent inconsistent data in database between mobile and webapp platform (like what happened with trioova)
+
+### 3. Security: session verification + CSRF attack proof + RBAC (role based access control)
+###### we need to do RBAC on both NODE endpoints and React page routes
+
+### 4. Code Spliting
+###### Benefit 1. user will not be able to download the JS code that his role dont have access to
+###### Benefit 2. faster loading speed
+
+
+### 5. Session management
+###### This project use connect-mogo to stroe session in a seperate MongoDB database, you can optionally store the session in redis
+
+
+### 6. Data validation: validate any frontend data before submitting data to remote API server
+###### Benefit: Prevent user from providing invalid data to our API server(like what happened with trioova)
+
+
+### 7. Data modification and manipulation
+###### Benefit: filtering data in the NODE layer, then transmiting the data to frontend will be much faster than transmiting the data to frontend, then filtering data in the frontend
+
+
+### 8. Server Side Rendering (optional)
+
+
+
+
+
+
+
+
