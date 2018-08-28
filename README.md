@@ -36,9 +36,8 @@ npm run server
 npm run dev
 ```
 
-### 3. To build all your static asssets after development
+### 4. To build all your static asssets after development
 
-###### Note: this will run both node api server and react front end, this is the command you want to run during development
 
 ```
 npm run build
@@ -46,15 +45,15 @@ npm run build
 
 # All things that this react-node project can do
 
-### 1. This Node server can serving all static assets (in fast loading speed) , and provide AJAX response (JSON data) through NODE endpoints
+### 1. This Node server can serve all static assets (in fast loading speed) , and provide AJAX response (JSON data) through NODE endpoints
 
 ### 2. All the endpoints can be used for both webapp and mobile platform
 
-###### Benefit: IOS/Android can send request to NODE endpoints rather API Server endpoints directly. this will prevent inconsistent data in database between mobile and webapp platform
+###### Benefit: IOS/Android can send request to NODE api endpoints rather remote API Server endpoints directly. this will prevent inconsistent data in database between mobile and webapp platform
 
 ### 3. Security: session verification + CSRF attack proof + RBAC (role based access control)
 
-###### we need to do RBAC on both NODE endpoints and React page routes
+###### we need to do RBAC on both NODE endpoints side and React page routes
 
 ### 4. Code Spliting
 
