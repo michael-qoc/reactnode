@@ -10,9 +10,9 @@ var MongoStore = require("connect-mongo")(session);
 // create server
 const app = express();
 
-// Load models //require passport config must come after require models!
-require("./models/User");
-require("./models/Article");
+// Load models //this is optional when you want to create any data from constructor
+// require("./models/User");
+// require("./models/Article");
 
 // Body parser middleware (should be before other app.use())
 app.use(bodyParser.urlencoded({ extended: false }));

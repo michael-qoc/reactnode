@@ -10,7 +10,6 @@ router.get("/:username", function(req, res, next) {
   axiosInstanceForApiServer
     .get(`/api/profiles/${req.params.username}`)
     .then(result => {
-      //console.log(result.data);
       return res.json({
         profile: result.data.profile
       });
@@ -20,11 +19,6 @@ router.get("/:username", function(req, res, next) {
         errors: "User not found"
       });
     });
-
-  // return res.json({
-  //   profile: req.profile.toProfileJSONFor(false),
-  //   linkedInProfile: req.linkedInProfile
-  // });
 });
 
 module.exports = router;
