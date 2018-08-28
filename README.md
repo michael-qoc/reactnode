@@ -74,3 +74,10 @@ npm run build
 ###### Benefit: filtering data in the NODE layer, then transmiting the data to frontend will be much faster than transmiting the data to frontend, then filtering data in the frontend
 
 ### 8. Server Side Rendering (optional)
+
+
+# Remote API server used in this project: URL: "https://www.superapp.ca/api" (this can be changed to companies's API server)
+###### Note: http request to fetch the static assets are handled by Node server. All other ajax request are filtered by Node server's business logic endpoints and proxyed to the remote API server.
+
+# Node server api endpoints: 
+###### (to be continued)
