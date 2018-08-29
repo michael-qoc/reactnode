@@ -5,7 +5,7 @@ const keys = require("./config/keys");
 const path = require("path");
 const compression = require("compression");
 const session = require("express-session");
-var MongoStore = require("connect-mongo")(session);
+const MongoStore = require("connect-mongo")(session);
 
 // create server
 const app = express();
@@ -34,7 +34,9 @@ app.use(
     //   url: process.env.REDIS_URL,
     //   secure: process.env.NODE_ENV=='production'
     // }),
-    store: new MongoStore({ mongooseConnection: mongoose.connection }),
+    /// uncomment the above lines if your are using redis to store session
+    // store: new MongoStore({ mongooseConnection: mongoose.connection }),
+    /// uncomment the above lines if your are using MongoDB to store session
     resave: false,
     saveUninitialized: false,
     name: "myconnect.sid",
